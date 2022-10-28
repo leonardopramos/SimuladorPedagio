@@ -1,13 +1,13 @@
 public class Cabine{
 
     private int qtdVeiculos;
-    private Fila cabine;
+    private Fila filaDeCarros;
     private boolean temCarro;
     private int numeroCabine;
 
     public Cabine(int numeroCabine){
-        this.cabine = new Fila();
-        this.qtdVeiculos = cabine.getQuantidade();
+        this.filaDeCarros = new Fila();
+        this.qtdVeiculos = filaDeCarros.getQuantidade();
         this.temCarro = false;
         this.numeroCabine = numeroCabine;
     }
@@ -28,8 +28,8 @@ public class Cabine{
     public int getQtdVeiculos() {
         return qtdVeiculos;
     }
-    public Fila getCabine() {
-        return cabine;
+    public Fila getFilaDeCarros() {
+        return filaDeCarros;
     }
 
     

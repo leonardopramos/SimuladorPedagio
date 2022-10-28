@@ -4,6 +4,11 @@ public class Fila{
     private Nodo fim;
     private int quantidade;
 
+    public Fila(){
+        this.inicio = null;
+        this.fim = null;
+        this.quantidade = 0;
+    }
     public void adicionar(Veiculo v){
 
         Nodo novoNodo = new Nodo(v);
@@ -34,8 +39,8 @@ public class Fila{
     public int getQuantidade() {
         return quantidade;
     }
-    public Veiculo retornaFinal(){
-        return this.inicio.veiculo;
+    public Nodo retornaPrimeiro(){
+        return this.inicio;
     }
     @Override
     public String toString() {

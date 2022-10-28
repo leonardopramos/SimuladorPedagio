@@ -6,4 +6,7 @@ public class ListaAtendimentos {
         this.atendidos = new Lista();
     }
     
+    public Lista getAtendidos() {
+        return atendidos;
+    }
 }
